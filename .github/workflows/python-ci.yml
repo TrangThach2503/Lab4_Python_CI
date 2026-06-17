@@ -1,13 +1,13 @@
 name: Python Code Quality Check (CI)
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
       - name: Lay code moi nhat tu kho ve may ao
         uses: actions/checkout@v3
